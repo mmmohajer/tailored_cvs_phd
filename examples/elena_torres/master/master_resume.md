@@ -9,7 +9,7 @@ Full-stack developer with a Django and React.js app piloted by teachers and a fr
 ## Skills
 
 - **Languages:** Python, JavaScript, SQL, TypeScript (coursework)
-- **Frameworks:** Django, Django REST Framework, React.js, Next.js, Node.js, Express
+- **Frameworks:** Django, Django REST Framework, React.js, Next.js, Node.js (coursework), Express (coursework)
 - **Data & Tools:** PostgreSQL, Git, Google Sheets API, Render, Docker (coursework)
 - **Practices:** automated testing with pytest, REST API design, code review on open-source pull requests
 

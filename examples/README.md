@@ -27,6 +27,10 @@ Each folder has the same shape:
 
 Every `match_report.md` ends with "Edits for you": what only the person can add. Every `review.md` lists what the truth pass removed.
 
+## Fixture
+
+`_fixtures/scanned_resume.pdf` is a fictional page saved as a picture, with no text layer. `python renderer/scripts/extract.py examples/_fixtures` reports it as `EMPTY` and exits with code 2. It shows what happens to a phone scan; it belongs to nobody's profile.
+
 ## Re-render and check
 
 ```bash

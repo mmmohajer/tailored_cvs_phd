@@ -25,7 +25,9 @@ profile/  ──►  master/  ──►  custom_resumes/<company>/
 
 ## Setup (once)
 
-Requires Python 3.10+ and [Cursor](https://cursor.com).
+Requires Python 3.10+ and [Cursor](https://cursor.com). There are no API keys: the agent runs inside Cursor, and the scripts run on your machine.
+
+**macOS / Linux**
 
 ```bash
 python3 -m venv .venv
@@ -33,7 +35,22 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-WeasyPrint (the PDF engine) needs Pango. On macOS: `brew install pango`. On Ubuntu/Debian: `sudo apt install libpango-1.0-0 libpangoft2-1.0-0`. Other systems: [WeasyPrint install guide](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html).
+WeasyPrint (the PDF engine) needs Pango. On macOS: `brew install pango`. On Ubuntu/Debian: `sudo apt install libpango-1.0-0 libpangoft2-1.0-0`.
+
+**Windows**
+
+1. Install [MSYS2](https://www.msys2.org/) with the default options. In the **MSYS2 UCRT64** shell run `pacman -S mingw-w64-ucrt-x86_64-pango`, then close it.
+2. In Command Prompt, from this folder:
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install -r requirements.txt
+```
+
+If you see `cannot load library`, run `set WEASYPRINT_DLL_DIRECTORIES=C:\msys64\ucrt64\bin` and try again. Old `.doc`, `.rtf`, `.odt`, and `.pages` files are read with macOS `textutil`; on Windows, save them as `.docx` or PDF first. WSL works too: follow the Linux steps.
+
+Other systems: [WeasyPrint install guide](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html).
 
 Check it works by rendering the example:
 

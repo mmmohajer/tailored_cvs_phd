@@ -4,8 +4,8 @@ This repo uses an AI agent to draft letters, so this file matters more than most
 
 ## Findings
 
-- In two field experiments, LLMs raised cover letter quality, especially for weaker applicants, but **did not increase interview invitations**: the improvements landed in standardized, less influential parts of the letter. When recruiters were told AI was used, they valued high-quality letters written without it more. [S18, A]
-- When Freelancer.com introduced an AI cover-letter tool, letters became more tailored to postings and callbacks rose for users, but the correlation between tailoring and callbacks across the market **fell by 51%**: letters became a weaker signal, and employers shifted to other evidence such as past reviews. **More time spent editing the AI draft was associated with higher hiring success.** [S19, A]
+- In two field experiments, LLMs raised cover letter quality, especially for weaker applicants, but **did not raise recruiters' rated likelihood of inviting the applicant to interview**: the improvements landed in standardized, less influential parts of the letter. When recruiters were told AI was used, they valued high-quality letters written without it more. [S18, A]
+- When Freelancer.com introduced an AI cover-letter tool, letters became more tailored to postings and callbacks rose for users, but the correlation between tailoring and callbacks across the market **fell by 51%**: letters became a weaker signal, and employers shifted to other evidence such as past reviews. **More time spent editing the AI draft was associated with higher hiring success** (a correlation, not proof that editing causes it). [S19, B]
 - Writing assistance that only fixed errors increased hires by 8%, with no drop in employer satisfaction. [S10, A]
 
 ## What the agent does

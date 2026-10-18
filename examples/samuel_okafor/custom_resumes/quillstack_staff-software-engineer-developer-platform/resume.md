@@ -18,7 +18,7 @@ Staff engineer setting technical direction for an internal developer platform us
 ### Staff Software Engineer, Developer Platform | Tidewater Commerce | Toronto, ON (remote) | Mar 2022 – Present
 
 - Own technical direction for the internal developer platform that 38 product teams (~260 engineers) build on.
-- Ran the Kubernetes migration end to end: wrote the migration RFC, ran a weekly migration guild, and completed the first 10 migrations myself as templates for other teams.
+- Led the Kubernetes migration: wrote the migration RFC, ran a weekly migration guild, and completed the first 10 migrations myself as templates for other teams.
 - Built golden-path service templates with Terraform modules, GitHub Actions, and Argo CD, cutting new-service setup from ~2 weeks to 1 day.
 - Chair the architecture review, reviewing ~50 design docs a year.
 - Write Go and Python platform tooling, including a CLI and Kubernetes operators; rolled out Prometheus and Grafana monitoring for platform services.

@@ -14,7 +14,7 @@ Written in the same tailoring run as the resume, into `custom_resumes/<slug>/cov
 4. **Write the letter** using `renderer/templates/cover_letter.md` and the four-paragraph structure in `structure.md`. 250–400 words. Today's date in `Month DD, YYYY`.
 5. **Handle gaps honestly:** at most one sentence on a real gap from the match report and how it's being closed. Career switchers use the opening or fit paragraph for the bridge.
 6. **Strip boilerplate** using the banned phrase list in `05_review.md`.
-7. **Add "Edits for you"** to `match_report.md`: 2–4 specific places where the person's own words would make the letter stronger (always including the "why this company" sentence). Research [S19] links editing time on AI drafts to hiring success.
+7. **Add "Edits for you"** to `match_report.md`: 2–4 specific places where the person's own words would make the letter stronger (always including the "why this company" sentence). Research [S19] found more editing time on AI drafts went with higher hiring success (observational).
 
 ## Rules
 

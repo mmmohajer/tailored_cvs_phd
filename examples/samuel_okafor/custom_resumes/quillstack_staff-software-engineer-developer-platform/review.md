@@ -10,7 +10,7 @@ check.py: PASS (`--max-pages 2`)
 | Relevance | 10 | Migration, CI/CD, and Kubernetes are proven in Selected Impact and again in the first role |
 | Evidence | 10 | Organization-level results with numbers: cost, deploy frequency, incidents, promotions |
 | Level fit | 10 | Staff: Selected Impact up top, older roles compressed; one full page once repeats were cut (2 is the ceiling) |
-| Clarity | 9 | Strong first page; the RFC result appears in both Selected Impact and Experience by design |
+| Clarity | 9 | Strong first page; after the length pass the RFC result appears once, in Selected Impact |
 | Letter | 8 | Specific and honest about gaps, but the posting's required "what I'd do differently" is still a placeholder |
 
 Fixes made:

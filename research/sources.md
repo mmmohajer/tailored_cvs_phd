@@ -22,7 +22,7 @@ Grade key in `README.md`. Checked October 2026.
 | S16 | Will Larson, *Staff Engineer: Leadership Beyond the Management Track* — [staff archetypes](https://staffeng.com/guides/staff-archetypes/) | 2021 | Interviews with Staff+ engineers | D |
 | S17 | Tanya Reilly, *The Staff Engineer's Path* (O'Reilly) | 2022 | Practitioner book | D |
 | S18 | Abbas Nejad, Musillo, Wicker, Zaccaria, *Labor Market Signals: The Role of Large Language Models* (Tilburg CentER DP 2025-003) — [link](https://research.tilburguniversity.edu/en/publications/labor-market-signals-the-role-of-large-language-models/) | 2025 | Two field experiments with job seekers and recruiters | A |
-| S19 | Cui, Dias, Ye, *Signaling in the Age of AI: Evidence from Cover Letters* (arXiv 2509.25054) — [link](https://arxiv.org/abs/2509.25054) | 2025 | Difference-in-differences on Freelancer.com application data | A |
+| S19 | Cui, Dias, Ye, *Signaling in the Age of AI: Evidence from Cover Letters* (arXiv 2509.25054) — [link](https://arxiv.org/abs/2509.25054) | 2025 | Difference-in-differences on about 5 million Freelancer.com cover letters; the editing-time link is observational | B |
 | S20 | US EEOC, *Prohibited Employment Policies/Practices* — [link](https://www.eeoc.gov/prohibited-practices) | current | Federal guidance on pre-employment inquiries | D |
 
 ## Notes on bias

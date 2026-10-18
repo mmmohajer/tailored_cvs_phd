@@ -21,3 +21,6 @@ __pycache__/
 .DS_Store
 .idea/
 .vscode/
+
+# Your course notes (graded tips, decision trace, pass bar)
+my_course_notes.md
