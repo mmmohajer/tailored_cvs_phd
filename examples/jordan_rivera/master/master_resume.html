@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jordan Rivera | Resume</title>
+  <link rel="stylesheet" href="../../../renderer/styles/classic.css" />
+</head>
+<body class="resume">
+<header class="doc-header">
+<h1>Jordan Rivera</h1>
+<p class="headline">Backend Engineer | Python · Django · PostgreSQL</p>
+<p class="contact">Toronto, ON | jordan.rivera@example.com | (555) 010-0199 | <a href="https://linkedin.com/in/jordan-rivera-dev">linkedin.com/in/jordan-rivera-dev</a> | <a href="https://github.com/jrivera-dev">github.com/jrivera-dev</a></p>
+</header>
+<main>
+<section class="summary">
+<h2>Summary</h2>
+<p>Backend engineer with 4+ years building Python and Django services for health tech and logistics. Cut booking API p95 latency from 900 ms to 250 ms and built a reminder pipeline that sends 150,000 messages a week and reduced clinic no-shows by 18%.</p>
+</section>
+<section class="skills">
+<h2>Skills</h2>
+<ul>
+<li><strong>Languages:</strong> Python, SQL, TypeScript, JavaScript</li>
+<li><strong>Frameworks:</strong> Django, Django REST Framework, Celery, FastAPI, React.js</li>
+<li><strong>Data &amp; Infra:</strong> PostgreSQL, MySQL, Redis, Docker, Amazon Web Services (AWS: ECS, RDS, S3)</li>
+<li><strong>Practices:</strong> CI/CD with GitHub Actions, automated testing with pytest, zero-downtime database migrations, on-call and runbooks, mentoring</li>
+</ul>
+</section>
+<section class="experience">
+<h2>Experience</h2>
+<h3 class="entry"><span><span class="entry-title">Software Engineer</span><span class="entry-meta"> · Northwind Health · Remote</span></span><span class="entry-date">Mar 2024 – Present</span></h3>
+<ul>
+<li>Cut p95 latency of the appointment booking API from 900 ms to 250 ms by adding Redis caching for clinic availability and removing three N+1 queries in the Django ORM.</li>
+<li>Built the appointment reminder pipeline on Celery and Redis, sending ~150,000 SMS and email reminders a week; clinics reported 18% fewer no-shows in the first quarter after launch.</li>
+<li>Co-led the zero-downtime migration of the appointment service from MySQL to PostgreSQL with one other engineer, writing the cutover plan and the dual-write and backfill scripts.</li>
+<li>Supported a booking platform used by ~300 clinics, joining the on-call rotation and writing 6 runbooks for the booking service.</li>
+<li>Mentored 2 engineering interns through their projects; one received a return offer.</li>
+<li>Built internal tools in TypeScript for the support team.</li>
+</ul>
+<h3 class="entry"><span><span class="entry-title">Junior Software Engineer</span><span class="entry-meta"> · Brightpath Logistics · Toronto, ON</span></span><span class="entry-date">Jul 2022 – Feb 2024</span></h3>
+<ul>
+<li>Built a carrier webhook integration processing ~40,000 tracking events a day, with idempotent handling and automatic retries.</li>
+<li>Raised test coverage of the tracking service from 35% to 80% by writing its pytest suite.</li>
+<li>Cut release time from ~2 hours to 15 minutes by moving deployments from manual scripts to GitHub Actions.</li>
+<li>Built Django REST Framework APIs for shipment tracking used by the customer portal.</li>
+</ul>
+<h3 class="entry"><span><span class="entry-title">Software Engineering Intern</span><span class="entry-meta"> · Brightpath Logistics · Toronto, ON</span></span><span class="entry-date">May 2021 – Aug 2021</span></h3>
+<ul>
+<li>Built an internal React.js dashboard that showed the operations team late shipments.</li>
+</ul>
+</section>
+<section class="projects">
+<h2>Projects</h2>
+<h3 class="entry"><span><span class="entry-title">Transit Delay Bot</span><span class="entry-meta"> · Python, FastAPI, PostgreSQL · <a href="https://github.com/jrivera-dev/transit-delay-bot">github.com/jrivera-dev/transit-delay-bot</a></span></span></h3>
+<ul>
+<li>Telegram bot that posts transit delays for subscribed routes, used by ~1,100 people.</li>
+</ul>
+</section>
+<section class="education">
+<h2>Education</h2>
+<h3 class="entry"><span><span class="entry-title">B.Sc. Computer Science</span><span class="entry-meta"> · Lakeshore University · Toronto, ON</span></span><span class="entry-date">2022</span></h3>
+</section>
+</main>
+</body>
+</html>

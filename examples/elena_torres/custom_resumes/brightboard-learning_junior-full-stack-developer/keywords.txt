@@ -1,0 +1,15 @@
+# Brightboard Learning — Junior Full-Stack Developer
+Python
+Django
+Django REST Framework
+JavaScript
+React
+PostgreSQL
+REST API
+Git
+code review
+tests
+teachers
+TypeScript
+Docker
+AWS

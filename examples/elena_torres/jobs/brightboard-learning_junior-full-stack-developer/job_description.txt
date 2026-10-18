@@ -1,0 +1,31 @@
+Brightboard Learning — Junior Full-Stack Developer
+Remote (Canada)
+
+Who we are
+Brightboard makes assignment and feedback tools for secondary school teachers. Over 2,000 Canadian classrooms use Brightboard to hand out work, grade it faster, and give students feedback they actually read.
+
+The role
+You'll join a small product team building features end to end: Django APIs, React screens, and the database changes in between. You'll talk with teachers regularly to understand what slows them down.
+
+What you'll do
+- Build features across our Django REST Framework backend and React frontend
+- Write and review tests for everything you ship
+- Design PostgreSQL schema changes with the team
+- Join teacher interviews and turn what you hear into small, shippable improvements
+
+What we're looking for
+- Python and Django (Django REST Framework a plus)
+- JavaScript and React
+- PostgreSQL and REST API design
+- Git and code review
+- A habit of writing tests
+- Comfort talking with non-technical users
+
+Nice to have
+- Classroom or education experience
+- TypeScript
+- Docker
+- AWS
+
+Applying
+Resume and cover letter. In your letter, tell us about a time you solved a problem for a user.

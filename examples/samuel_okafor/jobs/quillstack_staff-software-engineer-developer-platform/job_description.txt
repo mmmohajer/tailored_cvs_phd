@@ -1,0 +1,33 @@
+Quillstack — Staff Software Engineer, Developer Platform
+Remote (Canada) or Toronto
+
+About Quillstack
+Quillstack builds accounting software for mid-sized businesses. Our engineering org is 180 engineers across 30 teams, and it's growing.
+
+The role
+Our developer platform is a patchwork: three ways to deploy, two CI systems, and a lot of tribal knowledge. We're hiring our first Staff engineer for the platform to set its direction and lead the work to make shipping safe and boring for every team.
+
+What you'll do
+- Set the multi-year technical direction for the developer platform
+- Lead multi-team migrations (CI consolidation, moving remaining services to Kubernetes)
+- Write and review RFCs; help run architecture review
+- Raise the bar on reliability: ownership, on-call, incident review
+- Mentor senior engineers and help grow future Staff engineers
+
+What we're looking for
+- 10+ years in software engineering, with recent Staff-level scope
+- Deep Kubernetes experience in production
+- Terraform or other infrastructure as code
+- Experience building CI/CD platforms used by many teams
+- A record of leading migrations across many teams
+- Strong written communication (RFCs, design docs)
+- AWS
+
+Nice to have
+- Go or Python
+- OpenTelemetry
+- Backstage or another developer portal
+- Fintech or accounting domain
+
+How to apply
+Resume and cover letter. Tell us about a migration you led and what you'd do differently.

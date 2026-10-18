@@ -1,0 +1,14 @@
+# Quillstack — Staff Software Engineer, Developer Platform
+Kubernetes
+Terraform
+CI/CD
+migration
+RFC
+architecture review
+on-call
+mentor
+AWS
+Go
+Python
+OpenTelemetry
+Backstage

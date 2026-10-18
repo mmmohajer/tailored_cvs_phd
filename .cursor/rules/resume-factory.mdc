@@ -1,0 +1,13 @@
+---
+description: Resume factory ground rules (always on)
+alwaysApply: true
+---
+
+# Resume factory
+
+- "Resume" always means **resume and cover letter**. Tailoring produces both unless the posting says not to send a letter.
+- **Never invent or inflate.** Every employer, title, date, skill, number, and scope word comes from `master/`, and the master only from `profile/` or the person's answers. Missing facts become questions in `master/open_questions.md`.
+- Work through the skills in `.cursor/skills/` (start with `resume-factory`) and the rulesets in `rules/`. Base decisions on `research/`, and cite the source ID when a choice depends on it.
+- Personal data lives in `profile/`, `master/`, `jobs/`, `custom_resumes/` (gitignored). Don't copy it into `examples/`, commits, or anywhere else.
+- Render only with `renderer/scripts/render.py`; verify with `renderer/scripts/check.py`. Markdown is the only source you edit.
+- Ask the person instead of guessing. Ask at most 5 questions at a time, most valuable first.

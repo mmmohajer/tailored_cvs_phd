@@ -1,0 +1,12 @@
+/* Black-and-white variant of classic.css. */
+
+@import "classic.css";
+
+:root {
+  --accent: #111111;
+  --rule: #111111;
+  --link: #111111;
+  --muted: #555555;
+}
+
+h2 { border-bottom-width: 0.8pt; }

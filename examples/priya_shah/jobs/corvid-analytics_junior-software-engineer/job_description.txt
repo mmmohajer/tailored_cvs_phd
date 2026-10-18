@@ -1,0 +1,30 @@
+Corvid Analytics — Junior Software Engineer (New Grad 2026)
+Ottawa, ON (hybrid, 3 days in office)
+
+About us
+Corvid Analytics builds dashboards that help Canadian cities see what's happening on their streets: transit ridership, road repairs, and 311 service requests. Our customers are city staff who are not technical, so we care a lot about clear, fast interfaces.
+
+What you'll do
+- Build features across our React frontend and Node.js REST APIs
+- Write SQL against PostgreSQL to power new dashboard views
+- Write tests for the code you ship
+- Work with our designers and with city staff to understand what they need
+
+What we're looking for
+- A degree in Computer Science or a related field (2025 or 2026 graduates welcome)
+- JavaScript or TypeScript
+- React
+- Experience building or consuming REST APIs
+- SQL
+- Testing (Jest or similar)
+- Git
+
+Nice to have
+- Next.js
+- Data visualization (D3, Chart.js, or similar)
+- Python
+- AWS
+- An internship or project with real users
+
+How to apply
+Send a resume. A cover letter is optional but welcome: tell us about something you built that people used.

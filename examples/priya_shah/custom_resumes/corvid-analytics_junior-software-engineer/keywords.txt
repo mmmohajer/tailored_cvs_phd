@@ -1,0 +1,15 @@
+# Corvid Analytics — Junior Software Engineer (New Grad 2026)
+JavaScript
+TypeScript
+React
+Node.js
+REST API
+SQL
+PostgreSQL
+Jest
+Git
+Next.js
+Python
+D3
+Chart.js
+AWS

@@ -1,0 +1,32 @@
+Lumen Pay — Backend Engineer, Payments Platform
+Toronto, ON (hybrid, 2 days in office)
+
+About Lumen Pay
+Lumen Pay helps independent clinics, salons, and studios get paid: online booking deposits, card payments, and automatic payouts. We process payments for 12,000 small businesses across Canada.
+
+The role
+You'll join the Payments Platform team, which owns the services that move money: payment intents, refunds, payouts, and the ledger that keeps it all correct. We care about correctness first, then speed.
+
+What you'll do
+- Design, build, and operate Python services for payments and payouts
+- Build reliable asynchronous workflows (retries, idempotency, exactly-once effects)
+- Evolve our PostgreSQL schemas safely as we grow
+- Improve observability and take part in our on-call rotation
+- Review code and help newer engineers grow
+
+What we're looking for
+- 3+ years of professional backend experience with Python
+- Production experience with Django or FastAPI
+- Strong PostgreSQL skills, including migrations on live systems
+- Experience with distributed task queues or event streaming (Celery, Kafka, or similar)
+- Experience with AWS
+- A strong testing culture: you write tests as part of the work
+
+Nice to have
+- Payments, fintech, or ledger experience
+- Kafka
+- Terraform or other infrastructure as code
+- Experience in health or wellness software
+
+How to apply
+Send your resume and a short cover letter telling us why Lumen Pay.

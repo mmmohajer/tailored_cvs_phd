@@ -1,0 +1,31 @@
+Brain dump for the resume agent - Jordan
+
+Contact: jordan.rivera@example.com, (555) 010-0199, Toronto ON
+linkedin.com/in/jordan-rivera-dev   github.com/jrivera-dev
+Want: backend roles, Python. Fintech or health. Toronto hybrid or remote. Canadian citizen.
+
+NORTHWIND HEALTH (remote), Software Engineer, March 2024 to now
+- appointment booking platform used by about 300 clinics
+- booking API was slow, p95 around 900 ms. I added Redis caching for clinic availability and fixed three N+1 queries in the Django ORM. p95 went to about 250 ms.
+- MySQL -> PostgreSQL migration of the appointment service. Two of us did it. I wrote the cutover plan and the dual-write + backfill scripts. Zero downtime.
+- built the reminder pipeline on Celery + Redis. sends ~150,000 SMS and email reminders a week. Clinic ops report said no-shows dropped 18% in the first quarter after launch.
+- mentored 2 interns (one got a return offer)
+- on-call, wrote 6 runbooks for the booking service
+- stack: Python, Django, DRF, Celery, PostgreSQL, Redis, Docker, AWS (ECS, RDS, S3), GitHub Actions
+
+BRIGHTPATH LOGISTICS (Toronto), Junior Software Engineer, July 2022 to February 2024
+- Django REST APIs for shipment tracking used by the customer portal
+- carrier webhook integration, handles ~40,000 tracking events per day, idempotent processing with retries
+- wrote the pytest suite for the tracking service, coverage went from 35% to 80%
+- moved deploys from manual scripts to GitHub Actions, release time from about 2 hours to 15 minutes
+
+BRIGHTPATH LOGISTICS, Software Engineering Intern, May 2021 to August 2021
+- built an internal React dashboard for the ops team to see late shipments
+
+EDUCATION
+B.Sc. Computer Science, Lakeshore University, Toronto, 2018-2022. GPA 3.4.
+
+PROJECT
+Transit Delay Bot - Python, FastAPI, PostgreSQL. Telegram bot that posts transit delays for my routes. About 1,100 people use it. github.com/jrivera-dev/transit-delay-bot
+
+Also: some TypeScript at Northwind for internal tools. Never used Kafka or Terraform.

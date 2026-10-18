@@ -1,0 +1,116 @@
+/* Print stylesheet for resumes and cover letters (WeasyPrint). */
+
+@font-face { font-family: Roboto; src: url("fonts/roboto-400.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+@font-face { font-family: Roboto; src: url("fonts/roboto-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; }
+@font-face { font-family: Roboto; src: url("fonts/roboto-500.woff2") format("woff2"); font-weight: 500; font-style: normal; }
+@font-face { font-family: Roboto; src: url("fonts/roboto-500-italic.woff2") format("woff2"); font-weight: 500; font-style: italic; }
+@font-face { font-family: Roboto; src: url("fonts/roboto-700.woff2") format("woff2"); font-weight: 700; font-style: normal; }
+@font-face { font-family: Roboto; src: url("fonts/roboto-900.woff2") format("woff2"); font-weight: 900; font-style: normal; }
+
+:root {
+  --accent: #1b4f72;
+  --ink: #1a1a1a;
+  --muted: #5f6368;
+  --rule: #1b4f72;
+  --link: #2a75bb;
+  --font: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@page {
+  size: letter;
+  margin: 0.5in 0.65in 0.55in 0.65in;
+
+  @bottom-center {
+    content: string(person) " · " counter(page) " of " counter(pages);
+    font-family: var(--font);
+    font-size: 8.5pt;
+    color: #8a8a8a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 10.3pt;
+  line-height: 1.36;
+}
+
+a { color: var(--link); text-decoration: none; }
+
+/* Header */
+
+header.doc-header { text-align: center; margin: 0 0 0.5rem; }
+
+header.doc-header h1 {
+  string-set: person content();
+  margin: 0 0 0.2rem;
+  color: var(--accent);
+  font-size: 21pt;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+header.doc-header .headline { margin: 0 0 0.25rem; font-size: 11.5pt; font-weight: 500; }
+header.doc-header .contact { margin: 0; color: var(--muted); font-size: 9pt; }
+
+/* Sections */
+
+h2 {
+  margin: 0.55rem 0 0.25rem;
+  padding: 0 0 0.1rem;
+  color: var(--accent);
+  font-size: 11.5pt;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1.4pt solid var(--rule);
+  page-break-after: avoid;
+}
+
+h3 { margin: 0.4rem 0 0.1rem; font-size: 10.5pt; font-weight: 700; page-break-after: avoid; }
+
+h3.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.8rem;
+  font-weight: 400;
+}
+
+h3.entry .entry-title { font-weight: 700; }
+h3.entry .entry-meta { color: var(--muted); }
+h3.entry .entry-date { color: var(--muted); font-style: italic; white-space: nowrap; }
+
+p { margin: 0 0 0.3rem; }
+
+ul { margin: 0.1rem 0 0.3rem; padding: 0; list-style: none; }
+
+li { position: relative; margin: 0 0 0.12rem; padding-left: 0.95rem; }
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 0.45em;
+  width: 0.32em;
+  height: 0.32em;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+section { page-break-inside: auto; }
+section li { page-break-inside: avoid; }
+
+section.skills ul li { padding-left: 0; }
+section.skills ul li::before { display: none; }
+section.skills strong { color: var(--accent); }
+
+/* Cover letter */
+
+body.cover_letter { font-size: 10.8pt; line-height: 1.5; }
+body.cover_letter header.doc-header { text-align: left; border-bottom: 1.4pt solid var(--rule); padding-bottom: 0.4rem; margin-bottom: 1rem; }
+body.cover_letter main p { margin: 0 0 0.75rem; }

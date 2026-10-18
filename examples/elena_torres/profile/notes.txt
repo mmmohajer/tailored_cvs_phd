@@ -1,0 +1,33 @@
+Notes for the resume agent - Elena Torres
+elena.torres@example.com, (555) 010-0177, Hamilton ON
+linkedin.com/in/elena-torres-codes, github.com/etorres-codes, portfolio: etorres.dev
+
+Goal: junior full-stack developer. Ed-tech would be my dream: I taught for 7 years. Remote in Canada or Hamilton/Toronto hybrid.
+
+TEACHING (Riverside Secondary School, Hamilton) Sept 2018 - June 2025, Mathematics Teacher
+- grades 9-12 math, around 150 students a year
+- wrote a Python script with the Google Sheets API that auto-grades our weekly quizzes from Google Forms and emails each student their feedback. Grading went from about 6 hours a week to about 1 hour. 5 other teachers in the math department started using it.
+- used quiz data to regroup grade 9 applied math students for extra help. Department report: pass rate went from 68% to 81% over two school years (2022-23 to 2024-25). I designed the grouping; the whole department ran it.
+- started the school coding club, about 20 students each year, taught Python and Scratch
+- department rep for the school data team (attendance and grades dashboards in Google Sheets)
+
+LEFT TEACHING June 2025 to retrain.
+
+FORGE CODING BOOTCAMP - Full-Stack Web Development (full time, 24 weeks), July 2025 - January 2026
+- JavaScript, TypeScript, React, Node/Express, Python/Django, PostgreSQL, Git, Docker basics, testing
+- final project: QuizLoop (below). Team of 2, I did the Django backend and the grading logic, partner did most of the React UI.
+- TypeScript only in course exercises, not in my projects.
+
+FREELANCE since February 2026
+- built a website and booking form for Summit Tutoring Centre in Hamilton (Next.js + a small Django API + PostgreSQL). About 40 bookings a month come through it. They used to take bookings by phone only.
+
+PROJECTS
+- QuizLoop: Django REST Framework + React self-grading quiz app for teachers. Deployed on Render. 3 teachers at Riverside piloted it with about 90 students in spring 2026. 85% test coverage with pytest. github.com/etorres-codes/quizloop
+- 2 merged pull requests to an open-source Python quiz library (one docs fix, one timezone bug fix in due dates).
+
+EDUCATION
+- B.Sc. Mathematics, Eastbrook University, 2017
+- B.Ed., Eastbrook University, 2018
+- Ontario Certified Teacher (not needed for tech jobs I guess)
+
+No AWS. Docker only in bootcamp.

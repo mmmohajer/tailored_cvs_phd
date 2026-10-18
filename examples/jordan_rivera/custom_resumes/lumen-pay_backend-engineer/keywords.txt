@@ -1,0 +1,17 @@
+# Lumen Pay — Backend Engineer, Payments Platform
+Python
+Django
+FastAPI
+PostgreSQL
+migrations
+Celery
+Kafka
+AWS
+idempotent
+retries
+on-call
+code review
+testing
+observability
+payments
+Terraform

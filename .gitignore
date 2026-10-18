@@ -1,0 +1,23 @@
+# Personal data: never commit
+profile/*
+!profile/README.md
+master/*
+!master/README.md
+jobs/*
+!jobs/README.md
+custom_resumes/*
+!custom_resumes/README.md
+
+# Generated text from extract.py anywhere
+_extracted/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
