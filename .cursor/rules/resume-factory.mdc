@@ -1,13 +1,15 @@
 ---
-description: Resume factory ground rules (always on)
+description: PhD application ground rules (always on)
 alwaysApply: true
 ---
 
-# Resume factory
+# PhD applications
 
-- "Resume" always means **resume and cover letter**. Tailoring produces both unless the posting says not to send a letter.
-- **Never invent or inflate.** Every employer, title, date, skill, number, and scope word comes from `master/`, and the master only from `profile/` or the person's answers. Missing facts become questions in `master/open_questions.md`.
+- For each position, write four files in `custom_resumes/<slug>/`: a **custom CV** (`cv.md`, not a copy of the master), a **cover letter** (`cover_letter.md`), an **email to one professor** (`professor_email.md`), and a **follow-up plan** (`follow_up.md`). When the page is silent, also write the country-default essay in `research/statement/which_essay.md`. When the page names its essays, write those instead. The master file is `master/master_resume.md`. Read `research/countries/` before tailoring. Do not send the email.
+- **Never invent or inflate.** Every degree, grade, lab, advisor, paper, authorship, date, method, and number comes from `master/`, and the master only from `profile/` or the person's answers. Missing facts become questions in `master/open_questions.md`.
+- Do not write recommendation letters. Prepare `recommender_notes.md` so the person can brief writers who actually supervised the work.
 - Work through the skills in `.cursor/skills/` (start with `resume-factory`) and the rulesets in `rules/`. Base decisions on `research/`, and cite the source ID when a choice depends on it.
-- Personal data lives in `profile/`, `master/`, `jobs/`, `custom_resumes/` (gitignored). Don't copy it into `examples/`, commits, or anywhere else.
+- Personal data lives in `profile/`, `master/`, `positions/`, `custom_resumes/` (gitignored). Don't copy it into `examples/`, commits, or anywhere else.
+- `examples/` is the old job-application walkthrough. Do not imitate it. Its citations to `research/levels/`, `research/sections/`, and `research/cover_letter/` are gone.
 - Render only with `renderer/scripts/render.py`; verify with `renderer/scripts/check.py`. Markdown is the only source you edit.
 - Ask the person instead of guessing. Ask at most 5 questions at a time, most valuable first.

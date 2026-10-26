@@ -1,28 +1,17 @@
-# Layout, writing quality, and personal details
+# Layout and writing
 
 ## Findings
 
-**How people skim**
-
-- The initial screen averaged 7.4 seconds. Recruiters looked at job titles more than anything else, then company, dates, and education. [S01, C]
-- Top-performing resumes had simple layouts, clear section and title headers, bold job titles over bulleted accomplishments (an F/E reading pattern), a short overview at the top, and clear fonts. [S01, C]
-- Short declarative statements were easier to process than paragraph descriptions. [S01, C]
-
-**Writing quality changes outcomes**
-
-- In a field experiment with 480,948 jobseekers, those randomly given writing assistance (error correction, no generated content) were hired 8% more often. Employers were not less satisfied with them afterwards, which suggests clearer writing helps employers see real ability rather than faking it. Gains were largest for the weakest writers. [S10, A]
-- Google's recruiters: "the most important tip we have overall is to always check for typos." [S12, D]
-
-**Personal details (US/Canada)**
-
-- Name-based callback gaps exist at large US employers: distinctively Black names lowered contact rates by 2.1 percentage points on average across 83,000+ applications, concentrated in specific firms. [S15, A]
-- The EEOC discourages employers from requesting photos and information about protected characteristics before an offer. [S20, D]
+- **Committees use fast quantitative cuts, then read.** Elite doctoral committees trimmed large pools with GRE scores, grades, and the selectivity of the undergraduate institution because those were quick, not because faculty believed they were the best predictors of later success. [S07, B]
+- **The statement is where focus has to be visible.** A reader looking for qualifications, a research direction, and fit cannot find them in a list of adjectives. [S13, D]
+- **Disciplines do not share one picture of good writing.** High-consensus fields justify different standards from their own theories and methods. Economics and philosophy, the cases in one study, were not using the same idea of merit. [S08, B]
+- **Clear, specific prose is the part the applicant controls.** No field experiment in this folder measures "writing assistance" for PhD statements. Do not import industry-resume experiments about spellcheck and hiring.
 
 ## What the agent does
 
-- One column. Bold job titles. Dates right-aligned on the same line. Section headings in a consistent style. `renderer/styles/classic.css` does this.
-- Bullets, not paragraphs, under each role. One line per bullet where possible, two at most.
-- Proofread every output: spelling, tense (past for past roles, present for current), consistent date format, consistent punctuation. This is graded A evidence, so it is never skipped.
-- US/Canada: no photo, date of birth, age, marital status, religion, nationality, or full street address. City and region are enough.
-- Use the name the person wants to be called. Do not suggest changing a name to avoid bias; that is the person's choice, and the agent never raises it unasked.
-- Fonts: one sans-serif family, 10–11pt body, at least 0.5in margins. There is no strong evidence for a specific font; readability is what S01 measured.
+- One column, real text, standard headings, contact details in the body. The PDF has to survive a portal's text extractor and a faculty member's printout. See `application_portals.md`.
+- CV bullets are short and specific: method or contribution, then result. The statement is prose, first person, and does not repeat CV bullets sentence for sentence.
+- Names, paper titles, course names, and faculty names are spelled as in the source. Dates use one format, month and year.
+- No photo, date of birth, marital status, or nationality line unless the saved instructions for this country ask. A silent page is not a request. See `research/countries/`.
+- The statement opens on the research question or the preparation that led to it, not on a childhood origin story, unless the program's prompt asks for biography.
+- Errors are fixed before a file is called done. A statement is itself a writing sample in fields that care about prose. [S08, B, for the fact that fields set their own standard; the zero-typo rule is a house rule.]

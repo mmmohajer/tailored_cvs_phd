@@ -2,7 +2,7 @@
 
 Usage:
     python renderer/scripts/extract.py profile
-    python renderer/scripts/extract.py jobs/acme-corp_backend-engineer
+    python renderer/scripts/extract.py positions/university_program
 
 Supports .pdf, .docx, .txt, .md, .html/.htm, and (on macOS, via textutil) .doc/.rtf/.pages.
 Writes <folder>/_extracted/<file>.txt plus <folder>/_extracted/_index.md.

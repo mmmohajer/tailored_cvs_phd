@@ -5,6 +5,8 @@ master/*
 !master/README.md
 jobs/*
 !jobs/README.md
+positions/*
+!positions/README.md
 custom_resumes/*
 !custom_resumes/README.md
 

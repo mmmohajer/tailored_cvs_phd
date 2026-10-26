@@ -1,8 +1,9 @@
 ---
 name: render-resume
 description: >-
-  Render resume and cover letter Markdown to HTML and PDF and run the mechanical
-  checks. Use when the user says render, export PDF, make the PDF, or change style.
+  Render academic CV and statement Markdown to HTML and PDF and run the
+  mechanical checks. Use when the user says render, export PDF, make the PDF,
+  or change style.
 ---
 
 # Render

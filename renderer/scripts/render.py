@@ -1,11 +1,13 @@
-"""Render a resume or cover letter from Markdown to HTML and PDF.
+"""Render a custom CV, cover letter, professor email, or follow-up plan from Markdown to HTML and PDF.
 
 Usage:
     python renderer/scripts/render.py master/master_resume.md
-    python renderer/scripts/render.py custom_resumes/acme/resume.md --style minimal
-    python renderer/scripts/render.py custom_resumes/acme            # every .md resume/cover letter in the folder
+    python renderer/scripts/render.py custom_resumes/university/cv.md --style minimal
+    python renderer/scripts/render.py custom_resumes/university
 
 Writes <name>.html and <name>.pdf next to each Markdown file.
+`cv.md` and `master_resume.md` render as a CV. `cover_letter.md` renders as a cover letter.
+`professor_email.md` and `follow_up.md` render as prose. A `statement.md` is only for a position that asked for a statement of purpose.
 """
 
 from __future__ import annotations
@@ -21,12 +23,34 @@ ROOT = Path(__file__).resolve().parents[2]
 TEMPLATES = ROOT / "renderer" / "templates"
 STYLES = ROOT / "renderer" / "styles"
 
-RENDERABLE = ("resume", "cover_letter", "master_resume")
+RENDERABLE = ("resume", "cover_letter", "master_resume", "cv", "statement", "proposal", "motivation", "email", "follow_up")
 DATE_HINT = re.compile(r"(\d{4}|present|current|expected)", re.IGNORECASE)
 
 
 def detect_kind(md_path: Path) -> str:
-    return "cover_letter" if "cover" in md_path.stem.lower() else "resume"
+    stem = md_path.stem.lower()
+    if any(token in stem for token in ("cover", "statement", "proposal", "motivation", "email", "follow_up")):
+        return "cover_letter"
+    return "resume"
+
+
+def doc_label(md_path: Path, kind: str) -> str:
+    stem = md_path.stem.lower()
+    if "proposal" in stem:
+        return "Research Proposal"
+    if "motivation" in stem:
+        return "Motivation Letter"
+    if "follow" in stem:
+        return "Follow-up Plan"
+    if "email" in stem:
+        return "Email to Professor"
+    if "cover" in stem:
+        return "Cover Letter"
+    if "statement" in stem:
+        return "Statement of Purpose"
+    if kind == "cover_letter":
+        return "Cover Letter"
+    return "CV"
 
 
 def split_header(text: str) -> tuple[list[str], str]:
@@ -117,7 +141,7 @@ def build_html(md_path: Path, style: str) -> Path:
     css = STYLES / f"{style}.css"
     if not css.exists():
         raise SystemExit(f"Unknown style '{style}'. Available: {', '.join(p.stem for p in STYLES.glob('*.css'))}")
-    doc_title = f"{title} | {'Cover Letter' if kind == 'cover_letter' else 'Resume'}"
+    doc_title = f"{title} | {doc_label(md_path, kind)}"
     template = (TEMPLATES / "document.html").read_text(encoding="utf-8")
     page = (
         template.replace("{{title}}", html.escape(doc_title))
@@ -144,13 +168,13 @@ def targets(path: Path) -> list[Path]:
         return [path]
     found = sorted(p for p in path.glob("*.md") if any(k in p.stem for k in RENDERABLE))
     if not found:
-        raise SystemExit(f"No resume/cover letter Markdown files in {path}")
+        raise SystemExit(f"No CV or statement Markdown files in {path}")
     return found
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("path", type=Path, help="A .md file or a folder containing resume.md / cover_letter.md")
+    parser.add_argument("path", type=Path, help="A .md file or a folder of application Markdown")
     parser.add_argument("--style", default="classic", help="Stylesheet name in renderer/styles (default: classic)")
     parser.add_argument("--html-only", action="store_true", help="Skip PDF output")
     args = parser.parse_args(argv)

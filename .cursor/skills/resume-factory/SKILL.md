@@ -1,29 +1,30 @@
 ---
 name: resume-factory
 description: >-
-  Routes resume-factory work: build or update the master resume, tailor a resume
-  and cover letter to a job description, review, or render PDFs. Use when the user
-  says resume, CV, cover letter, master resume, tailor, customize, job description,
-  apply to, render resume, or names a folder under jobs/ or custom_resumes/.
+  Routes PhD application work: build or update the master academic CV, then for
+  one position write a custom CV, cover letter, email to a professor, and
+  follow-up plan. Use when the user says PhD, doctoral, cover letter, professor
+  email, follow up, academic CV, faculty, admissions, or names a folder under
+  positions/ or custom_resumes/.
 ---
 
-# Resume factory (router)
+# PhD applications (router)
 
-"Resume" means resume **and** cover letter.
+The output of tailoring is a **custom CV, a cover letter, an email to one professor, and a follow-up plan**. The master CV file is `master/master_resume.md`. The custom CV is not a copy of it.
 
 Pick exactly one skill and follow it:
 
 | The user wants | Skill |
 |---|---|
-| Build the master, add new info, answer open questions | `.cursor/skills/build-master/SKILL.md` |
-| A resume + cover letter for a job (a posting in `jobs/`, pasted text, a company name) | `.cursor/skills/tailor-resume/SKILL.md` |
-| Feedback or a score on an existing resume / letter | `.cursor/skills/review-resume/SKILL.md` |
+| Build the master CV, add new info, answer open questions | `.cursor/skills/build-master/SKILL.md` |
+| A custom CV, cover letter, professor email, and follow-up plan for one position | `.cursor/skills/tailor-resume/SKILL.md` |
+| Feedback or a score on an existing CV or statement | `.cursor/skills/review-resume/SKILL.md` |
 | Just the PDFs from existing Markdown | `.cursor/skills/render-resume/SKILL.md` |
 
 Resolve state first:
 
 1. `master/master_resume.md` missing → build the master before any tailoring, and tell the user that's why.
-2. Tailoring with a posting pasted in chat → create the folders with `python renderer/scripts/new_application.py "<Company>" "<Role>"` and save the text to `jobs/<slug>/job_description.md` first.
-3. Unclear which job → list folders in `jobs/` and ask.
+2. Tailoring with a call pasted in chat → create the folders with `python renderer/scripts/new_application.py "<University>" "<Position>"` and save the text to `positions/<slug>/position.md` first.
+3. Unclear which position → list folders in `positions/` and ask.
 
-Ground rules: `rules/00_quality_bar.md`.
+Ground rules: `rules/00_quality_bar.md`. Research lives in `research/` and is about doctoral admissions, not industry jobs.

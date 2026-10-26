@@ -1,28 +1,30 @@
 # Full Name
-Target Title
-City, Region | email@example.com | (555) 555-0100 | [linkedin.com/in/handle](https://linkedin.com/in/handle)
+Research area
+City, Region | email@example.com | [site](https://example.com)
 
 Month DD, YYYY
 
-Hiring Manager Name (or "Hiring Team")
-Company Name
+Admissions Committee
+Position or program
+University
 
-Dear Hiring Manager Name,
+Dear Admissions Committee,
 
-Opening: the exact role, why this company (one specific, true reason), and the one-line claim the rest of the letter proves.
+Opening: the position, one specific reason for this group, and the claim the letter will prove. Two or three sentences.
 
-Proof: one story from master/stories.md that matches the job's top requirement. Problem, what you did, the result with its number.
+Proof: one project from master/stories.md that matches what they asked for. What you did, and the result you can support.
 
-Fit: two or three requirements from the posting, each tied to evidence already on the resume. Name any real gap honestly and how you are closing it.
+Fit: the requirement or the professor's topic, tied to evidence already on the custom CV. One real gap, only if it matters.
 
-Close: what you'd like next (a conversation) and thanks. One or two sentences.
+Close: what you are asking for. Two sentences.
 
 Sincerely,
 Full Name
 
 <!--
 Format contract (render.py depends on it):
-- Same 3-line header as the resume.
+- Same 3-line header as the CV.
 - Single line breaks are kept (address block, sign-off).
-- One page. 250–400 words of body text.
+- Tailored copies are saved as cover_letter.md.
+- One page. About 250–400 words, unless the position sets another limit.
 -->

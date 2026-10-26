@@ -1,11 +1,12 @@
-"""Create the paired input/output folders for one job application.
+"""Create the paired input/output folders for one PhD application.
 
 Usage:
-    python renderer/scripts/new_application.py "Acme Corp"
-    python renderer/scripts/new_application.py "Acme Corp" "Backend Engineer"
+    python renderer/scripts/new_application.py "University of Toronto"
+    python renderer/scripts/new_application.py "University of Toronto" "Computer Science"
 
-Creates jobs/<slug>/ (drop the job description here) and custom_resumes/<slug>/ (outputs land here).
-Slug: company, or company_role when a role is given.
+Creates positions/<slug>/ (drop the position page and prompts here) and
+custom_resumes/<slug>/ (custom CV, cover letter, professor email, and follow-up plan land here).
+Slug: university, or university_program when a program is given.
 """
 
 from __future__ import annotations
@@ -28,15 +29,15 @@ def application_slug(company: str, role: str | None = None) -> str:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("company")
-    parser.add_argument("role", nargs="?")
+    parser.add_argument("institution", help="University or department name")
+    parser.add_argument("program", nargs="?", help="Program or field, optional")
     args = parser.parse_args(argv)
 
-    slug = application_slug(args.company, args.role)
-    for base in ("jobs", "custom_resumes"):
+    slug = application_slug(args.institution, args.program)
+    for base in ("positions", "custom_resumes"):
         (ROOT / base / slug).mkdir(parents=True, exist_ok=True)
         print(f"{base}/{slug}/")
-    print(f"\nNext: put the job description in jobs/{slug}/ (txt, md, pdf, or docx).")
+    print(f"\nNext: put the position page and prompts in positions/{slug}/ (txt, md, pdf, or docx).")
     return 0
 
 

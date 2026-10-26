@@ -4,10 +4,10 @@ Built by the agent from `profile/` and your answers (`rules/02_master.md`). Giti
 
 | File | What it is |
 |---|---|
-| `master_resume.md` | Everything true and strong about your career. No length limit. Source for every tailored resume. |
+| `master_resume.md` | The full academic CV. No length limit. Source for every custom CV, cover letter, and professor email. The filename stays `master_resume.md` so the renderer can find it. |
 | `master_resume.pdf` | Rendered for you to read and check |
-| `stories.md` | Longer stories for cover letters and interviews |
-| `profile_facts.md` | Level, target roles, preferences |
+| `stories.md` | Longer accounts of projects, used in statements |
+| `profile_facts.md` | Field, stage, target programs, preferences |
 | `open_questions.md` | What the agent still needs from you |
 | `review.md` | Review rounds |
 
